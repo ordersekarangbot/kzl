@@ -6,7 +6,7 @@ export default function AdminDashboard() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (!token) return (window.location.href = "/admin");
-    fetch("https://your-backend.vercel.app/api/saldo")
+    fetch("https://kzl.vercel.app/")
       .then((res) => res.json())
       .then((data) => setSaldo(data.data || null));
   }, []);
