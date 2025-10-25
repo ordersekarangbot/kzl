@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 export default function AdminLogin() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("syahrilsaputra");
+  const [password, setPassword] = useState("Gunung2023");
   const [error, setError] = useState("");
 
   const handleLogin = async (e) => {
